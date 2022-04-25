@@ -7,6 +7,20 @@ import styles from "./styles/NewProject.module.css";
 export function NewProject() {
   const navigate = useNavigate();
 
+  function verifySelected(){
+    let selected = document.getElementById('category_id').value
+    if(selected === "Selecione uma opção"){
+      alert('Escolha uma categoria!')
+      return false
+    }
+    
+    navigate('/projects', {
+      state: {
+        message: 'Projeto criado com sucesso!'
+      }
+    })
+  }
+
   function createPost(project) {
     project.cost = 0;
     project.services = [];
@@ -20,13 +34,7 @@ export function NewProject() {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        
-        navigate('/projects', {
-          state: {
-            message: 'Projeto criado com sucesso!'
-          }
-        })
-
+        verifySelected()
       })
       .catch((error) => console.log(error));
   }

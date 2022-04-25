@@ -1,70 +1,26 @@
 {
   "projects": [
     {
-      "name": "Projeto",
-      "budget": "500",
+      "name": "ruby",
+      "budget": "1500",
       "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 102,
-      "services": [
-        {
-          "name": "ee",
-          "cost": "18",
-          "description": "dd",
-          "id": "89d2671d-5bbf-4e5a-a7fa-8ea44f011f4f"
-        },
-        {
-          "name": "ee",
-          "cost": "18",
-          "description": "dd",
-          "id": "89d2671d-5bbf-4e5a-a7fa-8ea44f011f4f"
-        },
-        {
-          "name": "fff",
-          "cost": "22",
-          "description": "ff",
-          "id": "fc453185-9954-40b1-ac60-89bab6070580"
-        },
-        {
-          "name": "dd",
-          "cost": "22",
-          "description": "ddd",
-          "id": "a21fb72c-0ab2-44ef-ac84-b88126afdb0a"
-        },
-        {
-          "name": "dd",
-          "cost": "22",
-          "description": "ddd",
-          "id": "a21fb72c-0ab2-44ef-ac84-b88126afdb0a"
-        }
-      ],
-      "id": 9
-    },
-    {
-      "name": "Projeto 2",
-      "budget": "5000",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
+        "id": "3",
+        "name": "Design"
       },
       "cost": 0,
-      "services": [
-        {
-          "name": "d",
-          "Const": "2222",
-          "description": "12",
-          "id": "0ada4c41-5a93-4ea4-abbf-57d0694f2ce5"
-        },
-        {
-          "name": "d",
-          "Const": "2222",
-          "description": "12",
-          "id": "0ada4c41-5a93-4ea4-abbf-57d0694f2ce5"
-        }
-      ],
-      "id": 10
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "novo site",
+      "budget": "5000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
     }
   ],
   "categories": [
