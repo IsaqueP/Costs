@@ -7,10 +7,10 @@ import {
 import styles from './styles/Footer.module.css'
 
 
-export function Footer(){
-
+export function Footer({ menu }){
+    
     return(
-        <footer className={styles.footer}>
+        <footer className={menu ? `${styles.footer} ${styles.open}` : `${styles.footer}`}>
             <ul className={styles.social_list}>
                 <li> <FaFacebook /> </li>
                 <li> <FaInstagram /> </li>

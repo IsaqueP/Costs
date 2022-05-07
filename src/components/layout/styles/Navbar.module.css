@@ -1,25 +1,113 @@
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    background-color: #222;
-    padding: 1em;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .list{
+  display: flex;
+  gap: 1rem;
+}
+
+.list .item{
+  list-style: none;
+}
+
+.list .item a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.menuHamburger{
+  height: 40px;
+  width: 45px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px
+}
+.menuHamburger .hamburger{
+  height: 4px;
+  width: 100%;
+  background-color: #fff;
+  transition: 0.3s;
+  position: relative;
+}
+
+.menuHamburger:hover{
+  cursor: pointer;
+}
+
+/*Menu aberto*/
+.navbar.open {
+  width: 100%;
+  height: 5rem;
+}
+
+.navbar.open .logoHeader{
+  display: none;
+}
+
+
+.navbar.open .list{
+  visibility: visible;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.navbar.open .hamburger:nth-child(1){
+  transform: rotate(135deg);
+  top: 14px;
+}
+
+.navbar.open .hamburger:nth-child(2){
+  transform: rotate(135deg);
+  top: 1px;
+}
+
+.navbar.open .hamburger:nth-child(3){
+  transform: rotate(-135deg);
+  top: -11px;
+  left: 1px;
+}
+
+
+/*RESPONSIVIDADE */
+@media (max-width: 550px) {
+  .list{
+    height: 0px;
+    width: 100%;
     display: flex;
-    list-style: none;
     align-items: center;
-}
+    justify-content: center;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    background-color: #222;
+    flex-direction: column;
+    z-index: 1000;
+    visibility: hidden;
+    transition: 0.6s;
+    overflow-y: hidden;
 
-.item {
-    margin-right: 1em;
-}
+  }
 
-.item a{
-    color: #fff;
-    text-decoration: none;
-}
+  .list .item{
+    list-style: none;
+    padding: 2rem;
+    font-size: 1.4rem;
+  }
 
-.item a:hover{
-    color: #ffbb33;
+  .menuHamburger{
+    display: flex;
+  }
+
 }

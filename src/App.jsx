@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 //pages
@@ -16,12 +17,15 @@ import { Footer } from './components/layout/Footer'
 
 
 function App() {
+
+  const [ menu, setMenu ] = useState(false)
+
   return (
 
     <BrowserRouter>
-      <Navbar/>
+      <Navbar setMenu={setMenu} menu={menu}/>
 
-      <Container customClass='min-height'>
+      <Container customClass='min-height'  menu={menu}>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/Projects' element={<Projects/>}></Route>
@@ -32,7 +36,7 @@ function App() {
         </Routes>
       </Container>
 
-      <Footer/>
+      <Footer menu={menu}/>
     </BrowserRouter>
 
 

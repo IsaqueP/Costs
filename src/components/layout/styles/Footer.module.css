@@ -5,6 +5,10 @@
     text-align: center;
 }
 
+.footer.open{
+    display: none;
+}
+
 .social_list{
     display: flex;
     justify-content: center;
