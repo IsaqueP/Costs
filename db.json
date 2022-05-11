@@ -7,8 +7,15 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 1000,
+      "services": [
+        {
+          "name": "app",
+          "cost": "1000",
+          "description": "app",
+          "id": "efb18629-f729-4fdc-a683-be904f132e8a"
+        }
+      ],
       "id": 1
     },
     {
@@ -39,6 +46,17 @@
         }
       ],
       "id": 3
+    },
+    {
+      "name": "Teste",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "budget": "3500",
+      "cost": 0,
+      "services": [],
+      "id": 4
     }
   ],
   "categories": [

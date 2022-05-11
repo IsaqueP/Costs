@@ -8,3 +8,20 @@
     justify-content: space-between;
     margin-bottom: 2em;
 }
+
+@media (max-width: 430px){
+    .title_container{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title_container h1{
+        margin-bottom: 1rem;
+    }
+
+    .title_container a{
+        width: 8rem;
+        text-align: center;
+    }
+}

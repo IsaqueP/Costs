@@ -2,7 +2,7 @@
     padding: 1em;
     border: 1px solid #7a7a7a;
     border-radius: 5px;
-    width: 24%;
+    width: 16.5rem;
     margin: 0.5%
 }
 
@@ -65,7 +65,7 @@
     border: none;
     background-color: #fff;
     color: #222;
-    font-size: 0.9em;
+    font-size: 0.9em;   
     padding: 0.6em 1em;
     margin-right: 1em;
     cursor: pointer;
@@ -84,4 +84,45 @@
 .project_card_actions button:hover{
     background-color: #222;
     color: #ffbb33;
+}
+
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 610px){
+    .project_card{
+        padding: 1em;
+        border: 1px solid #7a7a7a;
+        border-radius: 5px;
+        width: 14rem;
+        margin: 0.5%
+    }
+
+    .project_card h4{
+        font-size: 1rem;
+        
+    }
+
+    .project_card_actions a,
+    .project_card_actions button{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 500px){
+    .project_card{
+        width: 12rem;
+    }
+}
+
+@media (max-width: 460px){
+    .project_card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 430px){
+    .project_card{
+        width: 100%;
+    }
 }
