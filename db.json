@@ -1,26 +1,19 @@
 {
   "projects": [
     {
-      "name": "ruby",
-      "budget": "1500",
+      "name": "Projeto1",
+      "budget": "5000",
       "category": {
         "id": "3",
         "name": "Design"
       },
-      "cost": 1000,
-      "services": [
-        {
-          "name": "app",
-          "cost": "1000",
-          "description": "app",
-          "id": "efb18629-f729-4fdc-a683-be904f132e8a"
-        }
-      ],
+      "cost": 0,
+      "services": [],
       "id": 1
     },
     {
-      "name": "novo site",
-      "budget": "5000",
+      "name": "Projeto2",
+      "budget": "1150",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -28,35 +21,6 @@
       "cost": 0,
       "services": [],
       "id": 2
-    },
-    {
-      "name": "Criação de todolist",
-      "budget": "20",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 12,
-      "services": [
-        {
-          "name": "banco de dados",
-          "cost": "12",
-          "description": "sql",
-          "id": "749ccea6-d080-44c8-879b-1a1d8bbeeac6"
-        }
-      ],
-      "id": 3
-    },
-    {
-      "name": "Teste",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "budget": "3500",
-      "cost": 0,
-      "services": [],
-      "id": 4
     }
   ],
   "categories": [
