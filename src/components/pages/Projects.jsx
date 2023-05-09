@@ -21,7 +21,7 @@ export function Projects() {
   }
 
   useEffect(()=>{
-    fetch('https://api-costs.vercel.app/projects',{
+    fetch('http://localhost:5000/projects',{
       method: 'GET',
       headers: {
           'Content-Type': 'application/json'
